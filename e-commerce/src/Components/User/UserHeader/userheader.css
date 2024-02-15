@@ -1,0 +1,59 @@
+/* NavBar.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+  
+.nav-list {
+    color:#b4a683; 
+    padding: 10px 5px; 
+    display: flex;
+    align-items:center;
+    margin-right: 50px; 
+    margin-left: 890px;
+    position: absolute; 
+  }
+  
+  /* Brand name */
+  .brandname h1 {
+    font-size:50px;
+    margin-right: auto;
+    margin: 0; 
+    color:#928054;
+    align-items:center;
+    position: absolute;
+    top: 40%; 
+    left: 15%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+
+  }
+  .headparagraph{
+    color:#c5b794;
+    position: absolute;
+    top: 40%; 
+    left: 15%; 
+    margin: 40px;
+    margin-left: 0.5px;
+
+  }
+ 
+  .nav-list li {
+    display: inline-block; 
+    margin-right: 20px; 
+  }
+  .nav-list :hover {
+    background-color:#f3e2cf;
+    box-sizing: 2px 2px;
+
+    
+  } 
+  
+  
+.firstpage{
+     display: flex;
+     margin: 0;
+     margin-bottom: 0;
+        height: 100vh;
+        width:100%;
+        
+}
+  
