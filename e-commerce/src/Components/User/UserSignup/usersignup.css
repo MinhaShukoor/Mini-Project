@@ -1,0 +1,111 @@
+body{
+   background-color:#C2D4D2;
+}
+ 
+ .signup{
+    width: 100%;
+    height: 80vh;
+
+    padding-top: 100px;
+}
+
+.signup-container{
+    width: 300px;
+   background-color:#b5c8c6;
+   box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.3); /* Adjust shadow as needed */
+
+    height: 450px;
+    margin: auto;
+    padding: 30px 40px;
+}
+
+.signup-container h1{
+    margin: 20px 0px;
+}
+
+.signup-fields {
+    border: none;
+    outline: none;
+  margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+    margin-top: 20px;
+}
+
+.signup-fields input{
+    height: 32px;
+    width:95%;
+    padding-left: 10px;
+    padding-right: 0px;
+    border: none;
+    outline: none;
+    border: 1px solid #4a929f;
+    outline: none;
+    color: #3d3939;
+}
+
+.signup-fields ::placeholder{
+        color: #1c3b58;
+        display: inline;
+        background: none;
+        letter-spacing: 2px;
+      
+        font-family: 'Jura', sans-serif;
+      }
+      .signup input{
+         margin-bottom: 15px; /* Add space between inputs */
+  padding: 8px;
+
+        background: transparent;
+        border-radius: 6px;
+        border: 1px solid rgb(67, 66, 66);
+      }
+      .signup h1{
+        text-align: center;
+        font-size: 30 px;
+        color:#2c342f;
+        letter-spacing: 3px;
+
+      }
+
+      .sign-background{
+        height: 100vh;
+        width: 100%;
+      }
+
+      .signup-container button {
+         width: 100%;
+         padding: 10px;
+         margin-top: 15px; /* Add space between button and inputs */
+         border: none;
+         border-radius: 5px;
+         background-color: #112338;
+         color: #fff;
+         cursor: pointer;
+         transition: background-color 0.3s ease; /* Add smooth transition effect */
+       }
+       
+       .signup-container button:hover {
+         background-color: #1d2732;
+       }
+       
+       
+       
+       .signup-container .login-message {
+         margin-top: -65px; /* Add space between button and login message */
+         text-align: center;
+         color: rgb(50, 50, 50);
+       }
+       
+       .signup-container .login-message .login-link {
+         color: #060e2cf8; /* Change link color */
+         font-size: 17px;
+       }
+       
+       .signup-container .login-message .login-link:hover {
+         text-decoration: underline; /* Add underline on hover */
+         text-decoration: none;
+       }
+       
+       

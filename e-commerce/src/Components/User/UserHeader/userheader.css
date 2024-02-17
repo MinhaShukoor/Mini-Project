@@ -1,59 +1,179 @@
 /* NavBar.module.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
+  body{
+    background-color: #C2D4D2;
+
+  }
+  .logo-container {
+    width: 150px; 
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    place-items: center;
+  }
   
+  .logo-image {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    place-items: center;
+    margin-right: 50px; 
+    margin-top: -10px;
+    margin-left: 500px;
+    object-fit: contain;
+  }
 .nav-list {
-    color:#b4a683; 
     padding: 10px 5px; 
     display: flex;
     align-items:center;
-    margin-right: 50px; 
-    margin-left: 890px;
+    margin-right: 990px; 
+    margin-left: 10px;
+    margin-top: 20px;
     position: absolute; 
+
+    letter-spacing: 2.3px;
+    justify-content: space-around;
+
+
   }
+   .nav-list li a{
+    text-decoration: none;
+    color:#45534c; 
+   }
   
-  /* Brand name */
-  .brandname h1 {
-    font-size:50px;
-    margin-right: auto;
-    margin: 0; 
-    color:#928054;
-    align-items:center;
-    position: absolute;
-    top: 40%; 
-    left: 15%; 
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-
-  }
-  .headparagraph{
-    color:#c5b794;
-    position: absolute;
-    top: 40%; 
-    left: 15%; 
-    margin: 40px;
-    margin-left: 0.5px;
-
-  }
- 
   .nav-list li {
     display: inline-block; 
     margin-right: 20px; 
-  }
+
+  } 
   .nav-list :hover {
-    background-color:#f3e2cf;
+
+    
     box-sizing: 2px 2px;
 
     
   } 
-  
-  
-.firstpage{
-     display: flex;
-     margin: 0;
-     margin-bottom: 0;
-        height: 100vh;
-        width:100%;
-        
+
+.nav-list .icon {
+  width: 50px; 
+  height: 50px; 
+  position:absolute;
+  display: flex;
+  margin-left: 2100px;
+  justify-content: space-around;
+
+
 }
+.nav-list .icon {
+  width: 30px; 
+  height: 30px; 
+  position:absolute;
+  color:#041931; 
+  tab-size: 200%;
+  display: flex;
+  margin-left: 1600px;
+
+  justify-content: space-around;
+  zoom: 1.3;
+
+
+
+}
+
+.nav-list .icons {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; 
+  position:absolute;
+  color:#041931; 
+  display: flex;
+  zoom: 1.3;
+  margin-left: 1560px;
+  justify-content: space-around;
+
+
+   /* Push cart icon to the right */
+}
+
+.nav-list.icon :hover{
+  background: none;
+  text-decoration: none;
+
+}
+
+.icon li {
+  display:none; 
+  margin-right: 20px; 
+
+}
+
+.nav-list.icons ::after{
+  color: rgb(205, 95, 95);
+  background-color: none;
+
+}
+
+
+
+
+
+.headericons::after {
+ 
+  color: rgb(205, 95, 95);
+  border-radius: 50%;
+  font-size: 12px;
+
+}
+
+
+
+
+
+
+.shop-now .shop-now-button {
+  background-color:#45534c; /* Button background color */
+  color: #fff; /* Button text color */
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 60%; 
+    left: 25%;
+}
+
+.shop-now .shop-now-button:hover {
+  background-color:#8a8f8c;
+}
+
+  /* Header.css */
+
+
+
+.firstpage{
+  display: flex;
+  margin: 0;
+  margin-bottom: 0;
+     height: 90vh;
+     width:90%;
+     position: absolute; 
+     margin-right: 50px; 
+     margin-left: 790px;
+/* background-image: url(C:\MiniProject\e-commerce\public\backgroundimg.png); */
+     
+}
+
+  
+
+/* styles.css (or whatever your CSS file is named) */
+
+
+
+
+
+
+
   

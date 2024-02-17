@@ -1,0 +1,28 @@
+  
+  /* Brand name */
+  .brandname h1 {
+    font-size:50px;
+    margin-right: auto;
+    margin: 0; 
+    color:#323D37;
+    align-items:center;
+    position: absolute;
+    top: 40%; 
+    left: 30%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+
+
+  }
+  .headparagraph{
+    font-family: 'Jura', sans-serif;
+
+    color:#45534c;
+    position: absolute;
+    top: 40%; 
+    left: 20%; 
+    margin: 40px;
+    margin-left: 0.5px;
+
+  }
+ 
