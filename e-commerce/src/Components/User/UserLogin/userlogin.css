@@ -1,60 +1,189 @@
-/* .signup{
-    align-items: center;
-    font-size: 1.8rem;
-    font-weight: 100;
-    margin-bottom: 300%;
-    text-align: center;
-
-    margin:10px auto;
-    padding:20px;
+body{
+  background-color:#C2D4D2;
 }
 
 
-.form-container {
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 300px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input {
+.header{
+ background-color: #edf3f1; /* Background color */
+box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1); 
+margin-top: -43.5px;
+width: 960%;
+height: 6vh;
+margin-left: -10px;
+}
+
+.nav-list {
+  padding: 10px 5px; 
+  display: flex;
+  align-items:center;
+  margin-right: 990px; 
+  margin-left: 10px;
+  margin-top: -40px;
+  position: absolute; 
+  letter-spacing: 2.3px;
+  justify-content: space-around;
+}
+.nav-list .carticon {
+  width: 30px; 
+  height: 30px; 
+  position:absolute;
+  color:#041931; 
+  display: flex;
+  margin-right: -270px;
+  zoom: 1.3;
+  margin-left: 1650px;
+  justify-content: space-around;
+  margin-top:9.89px;
+}
+
+.nav-list .wishicon {
+  width: 30px; 
+  height: 30px; 
+  position:absolute;
+  color:#041931; 
+  tab-size: 200%;
+  display: flex;
+  margin-top: 10px;
+  margin-right: -1870px;
+
+ justify-content: space-around;
+  zoom: 1.3;
+
+}
+.nav-list .wishticon {
+  width: 50px; 
+  height: 50px; 
+  position:absolute;
+  display: flex;
+  margin-right: -1900px;
+
+  /* margin-left: 100px; */
+  justify-content: space-around;
+
+
+}
+.nav-list.icon :hover{
+  background: none;
+  text-decoration: none;
+
+}
+
+.icon li {
+  display:none; 
+  margin-right: 20px; 
+
+}
+
+.nav-list.icons ::after{
+  color: rgb(205, 95, 95);
+  background-color: none;
+
+}
+
+ 
+.login{
+  width: 100%;
+  height: 80vh;
+
+  padding-top: 100px;
+}
+
+.login-container{
+  width: 300px;
+ background-color:#b5c8c6;
+ box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.3); /* Adjust shadow as needed */
+
+  height: 350px;
+  margin: 50px;
+  margin-left: 480px;
+  padding: 30px 40px;
+}
+
+.login-container h1{
+  margin: 20px 0px;
+}
+
+.login-fields {
+  border: none;
+  outline: none;
+margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+  margin-top: 20px;
+}
+
+.login-fields input{
+  height: 32px;
+  width:95%;
+  padding-left: 10px;
+  padding-right: 0px;
+  border: none;
+  outline: none;
+  border: 1px solid #4a929f;
+  outline: none;
+  color: #3d3939;
+}
+
+.login-fields ::placeholder{
+      color: #1c3b58;
+      display: inline;
+      background: none;
+      letter-spacing: 2px;
     
-    box-sizing: border-box;
-    width: 100%;
-    padding: 6px;
-    margin-bottom: 6px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  button {
-   
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .error-message {
-    color: #ff0000;
-    font-size: 0.8em;
-    margin-top: 5px;
-  } */
+      font-family: 'Jura', sans-serif;
+    }
+    .login input{
+       margin-bottom: 15px; /* Add space between inputs */
+padding: 8px;
+
+      background: transparent;
+      border-radius: 6px;
+      border: 1px solid rgb(67, 66, 66);
+    }
+    .login h1{
+      text-align: center;
+      font-size: 30 px;
+      color:#2c342f;
+      letter-spacing: 3px;
+
+    }
+
+    .login-background{
+      height: 100vh;
+      width: 100%;
+    }
+
+    .login-container button {
+       width: 100%;
+       padding: 10px;
+       margin-top: 15px; /* Add space between button and inputs */
+       border: none;
+       border-radius: 5px;
+       background-color: #112338;
+       color: #fff;
+       cursor: pointer;
+       transition: background-color 0.3s ease; /* Add smooth transition effect */
+     }
+     
+     .login-container button:hover {
+       background-color: #1d2732;
+     }
+     
+     
+     
+     .login-container .login-message {
+       margin-top: -65px; /* Add space between button and login message */
+       text-align: center;
+       color: rgb(50, 50, 50);
+     }
+     
+     .login-container .login-message .login-link {
+       color: #060e2cf8; /* Change link color */
+       font-size: 17px;
+     }
+     
+     .login-container .login-message .login-link:hover {
+       text-decoration: underline; /* Add underline on hover */
+       text-decoration: none;
+     }

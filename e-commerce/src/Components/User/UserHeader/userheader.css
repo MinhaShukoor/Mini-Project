@@ -2,37 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
   body{
-    background-color: #C2D4D2;
+    background-color: #D5D2CD;
 
   }
-  .logo-container {
-    width: 150px; 
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    object-fit: contain;
-    place-items: center;
-  }
   
-  .logo-image {
-    width: 90%;
-    height: 90%;
-    display: grid;
-    place-items: center;
-    margin-right: 50px; 
-    margin-top: -10px;
-    margin-left: 500px;
-    object-fit: contain;
-  }
+.header{
+  background-color: #D5D2CD; /* Background color */
+ box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1); 
+ margin-top: -8.5px;
+ width: 960%;
+ height: 7vh;
+ margin-left: -10px;
+ }
+  
+  
 .nav-list {
+ 
     padding: 10px 5px; 
     display: flex;
     align-items:center;
     margin-right: 990px; 
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 5px;
     position: absolute; 
-
     letter-spacing: 2.3px;
     justify-content: space-around;
 
@@ -40,7 +32,7 @@
   }
    .nav-list li a{
     text-decoration: none;
-    color:#45534c; 
+    color:#570303;
    }
   
   .nav-list li {
@@ -67,15 +59,16 @@
 
 }
 .nav-list .icon {
+
+
   width: 30px; 
   height: 30px; 
   position:absolute;
   color:#041931; 
   tab-size: 200%;
   display: flex;
-  margin-left: 1600px;
-
-  justify-content: space-around;
+  margin-left: 1700px;
+ justify-content: space-around;
   zoom: 1.3;
 
 
@@ -89,7 +82,7 @@
   color:#041931; 
   display: flex;
   zoom: 1.3;
-  margin-left: 1560px;
+  margin-left: 1650px;
   justify-content: space-around;
 
 
@@ -116,23 +109,8 @@
 
 
 
-
-
-.headericons::after {
- 
-  color: rgb(205, 95, 95);
-  border-radius: 50%;
-  font-size: 12px;
-
-}
-
-
-
-
-
-
 .shop-now .shop-now-button {
-  background-color:#45534c; /* Button background color */
+  background-color:#783D08; /* Button background color */
   color: #fff; /* Button text color */
   font-size: 16px;
   padding: 10px 20px;
@@ -141,12 +119,14 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   position: absolute;
+  margin-top: -650px;
+  margin-left: -20%;
   top: 60%; 
     left: 25%;
 }
 
 .shop-now .shop-now-button:hover {
-  background-color:#8a8f8c;
+  background-color:#b32525;
 }
 
   /* Header.css */
@@ -157,18 +137,20 @@
   display: flex;
   margin: 0;
   margin-bottom: 0;
-     height: 90vh;
+     height: 80vh;
      width:90%;
      position: absolute; 
+     margin-top: 80px;
      margin-right: 50px; 
-     margin-left: 790px;
-/* background-image: url(C:\MiniProject\e-commerce\public\backgroundimg.png); */
+     margin-left: 770px;
      
 }
 
+
+
+
   
 
-/* styles.css (or whatever your CSS file is named) */
 
 
 

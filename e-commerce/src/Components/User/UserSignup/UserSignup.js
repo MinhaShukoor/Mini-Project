@@ -26,9 +26,9 @@ import { useState } from 'react';
       };
 
 
+    return (
+          
 
-       
-        return (
             <div className='signup'>
             <div className ="signup-container">
                 <h1>SIGNUP</h1>
@@ -74,11 +74,12 @@ import { useState } from 'react';
       <div className="login-message">
   Already have an account? <a className="login-link" href="/login">Login here</a>
 </div>
-
-      </div>
+</div>
       
       </div>
       </div>
+      
+      
   );
 };
 
