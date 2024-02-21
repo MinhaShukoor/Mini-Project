@@ -20,7 +20,6 @@
 .nav-list1 {
   color:#570303;
   font-size:13px;
-
   padding: 40px 0px; 
   align-items:center;
   margin-right: 90px; 
@@ -37,6 +36,8 @@
     font-size: 14PX;
     color:#570303;
     position: absolute;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     top: 8%; 
     letter-spacing: 2px;
     left: -10%; 
@@ -311,4 +312,15 @@ padding-top: 90px;
 } */
 
 
-
+.firstpage{
+  display: flex;
+  margin: 0;
+  margin-bottom: 0;
+     height: 80vh;
+     width:90%;
+     position: absolute; 
+     margin-top: 80px;
+     margin-right: 50px; 
+     margin-left: 770px;
+     
+}

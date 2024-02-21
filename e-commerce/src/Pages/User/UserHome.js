@@ -1,15 +1,17 @@
 import React from 'react'
-import UserHeader from '../../Components/User/UserHeader/UserHeader';
-import Homepage from '../../Components/User/UserHomepage/Homepage';
+import UserHomepage from '../../Components/User/UserHomepage/UserHomepage'
+import UserHeader from '../../../src/Components/User/UserHeader/UserHeader.js'
 
-function UserHomepage() {
+const UserHome = () => {
   return (
     <div>
+    <UserHomepage/>
     <UserHeader/>
-    <Homepage />
 
     </div>
   )
 }
 
-export default UserHomepage
+export default UserHome
+
+

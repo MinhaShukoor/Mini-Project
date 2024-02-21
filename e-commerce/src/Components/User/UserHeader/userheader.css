@@ -110,11 +110,14 @@
 
 
 .shop-now .shop-now-button {
-  background-color:#783D08; /* Button background color */
-  color: #fff; /* Button text color */
+  background-color:#7f4c1f;
+  color: #fff;
+ 
   font-size: 16px;
   padding: 10px 20px;
   border: none;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3); /* Adjust shadow as needed */
+border-color: black;
   /* border-radius: 5px; */
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -126,25 +129,14 @@
 }
 
 .shop-now .shop-now-button:hover {
-  background-color:#b32525;
+  background-color:#8b6e55;
 }
 
   /* Header.css */
 
 
 
-.firstpage{
-  display: flex;
-  margin: 0;
-  margin-bottom: 0;
-     height: 80vh;
-     width:90%;
-     position: absolute; 
-     margin-top: 80px;
-     margin-right: 50px; 
-     margin-left: 770px;
-     
-}
+
 
 
 

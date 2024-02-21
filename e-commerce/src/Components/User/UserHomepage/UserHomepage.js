@@ -1,11 +1,17 @@
 
 import React from 'react';
 import './userhomepage.css';
-import UserFooter from '../UserFooter/UserFooter'; // Import UserFooter component here
+import UserFooter from '../UserFooter/UserFooter'; 
+
 
 const UserHomepage = ({ onShopNowClick }) => {
   return (
     <div>
+      
+      <div className='firstpage'>
+{/* <img classname = "firstpage" src=".\home1.JPG" alt="firstpage"/> */}
+<img classname = "firstpage" src=".\home3.PNG" alt="firstpage"/>
+  </div>
       <div className='nav-list1'>
         <h1>CLASSIC GLORY</h1>
         <p className='headparagraph'>WE BELIEVE THAT EVERY PIECE OF JEWELRY HAS A UNIQUE TABLE TO TELL, AND WE'RE DEDICATED TO HELPING YOU DISCOVER THE PERFECT STORY FOR YOU. EXPLORE OUR CAPTIVATING RANGE TODAY AND LET YOUR STYLE SHINE WITH BRILLIANCE AND BEAUTY</p>
@@ -47,8 +53,10 @@ const UserHomepage = ({ onShopNowClick }) => {
           </div>
         </div>
       </div>
+
       <UserFooter /> {/* Place UserFooter component here */}
     </div>
+    
   );
 };
 

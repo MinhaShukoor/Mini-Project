@@ -1,27 +1,18 @@
-import React from 'react'
-import UserHomepage from './Pages/User/UserHome.js'
-import { BrowserRouter,Route,Routes } from 'react-router-dom'
-import User from './MainRoutes/User.js'
-// import UserSignupPage from './Pages/User/UserSignupPage.js'
-
-// import UserLoginPage from './Pages/User/UserLoginPage'
-
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import User from '../src/MainRoutes/User';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-      <Routes>
-        <Route path='/*' element={<User/>}/>
-      </Routes>
-      </BrowserRouter>
-<UserHomepage/>
-{/* <UserSignupPage/> */}
-{/* <UserLoginPage /> */}
-
-    </div>
-  )
+    <BrowserRouter>
+      <User />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
+
+
+
+
 

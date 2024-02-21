@@ -27,7 +27,7 @@ import { useState } from 'react';
 
 
     return (
-          
+<div>
 
             <div className='signup'>
             <div className ="signup-container">
@@ -78,7 +78,8 @@ import { useState } from 'react';
       
       </div>
       </div>
-      
+      </div>
+
       
   );
 };

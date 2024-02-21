@@ -31,7 +31,7 @@ return (
 <div classname = "logo"   className='logo-image'/>
         <nav>
         <ul className='nav-list'>
-        <li><a href="/home" >HOME</a></li>
+        <li><a href="/" >HOME</a></li>
 
         </ul>
         </nav>
