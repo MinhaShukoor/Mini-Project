@@ -1,0 +1,336 @@
+  
+  /* Brand name */
+  /* .brandname h1 {
+    font-size:30px;
+    margin-right: auto;
+    margin: 0; 
+    color:#570303;
+    align-items:center;
+    position: absolute;
+    top: 40%; 
+    left: 30%; 
+    letter-spacing: 4px;
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+
+
+  } */
+    
+  
+.nav-list1 {
+  color:#570303;
+  font-size:13px;
+  padding: 40px 0px; 
+  align-items:center;
+  margin-right: 90px; 
+  margin-left: 180px;
+  margin-top: 140px;
+  position: absolute; 
+  letter-spacing: 6.3px;
+  justify-content: space-around;
+
+
+}
+  .headparagraph{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14PX;
+    color:#570303;
+    position: absolute;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 8%; 
+    letter-spacing: 2px;
+    left: -10%; 
+    margin-top: 499x;
+    margin: 40px;
+    margin-bottom: -100%;
+    margin-left: 500px;
+    margin-right: 600px;  
+    text-align: right; 
+     margin: 0 auto;
+     max-width: 600px; 
+    
+    text-align: center;
+  }
+
+  /* Style for images */
+  /* .container1{
+    width:100%;
+    min-height: 460px;
+    background-color: black;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+} */
+/* .image{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: row;
+    object-position: center;
+    align-items: center;
+    margin-top: 80px;
+    max-width: 50%;
+    height: 50px;
+} */
+/* .container1 .image{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    object-fit: contain;
+} */
+
+
+.arrivalimage{
+  display: flex;
+  margin-bottom: 0;
+  justify-content: space-between;
+  
+  margin-top: -340px;
+     height: 50vh;
+     width:100%;
+     position: absolute;    
+}
+
+.arrivalimage {
+  display: flex;
+}
+
+.arrivalimage img {
+  margin-right: 10px; /* Adjust the space between images */
+}
+
+/* Remove the margin-right from the last image to prevent extra space */
+.arrivalimage img:last-child {
+  margin-right: 10%;
+}
+
+/* Set max-width for images to prevent them from stretching */
+.arrivalimage img {
+  max-width: 100%; /* Ensure images don't exceed their container */
+
+}
+
+.headofA{
+  color: rgb(97, 13, 13);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self:center ;
+  align-content: center;
+  margin-top: 800px;
+  text-align: center;
+  margin: 400px;
+  letter-spacing: 5px;
+  padding-bottom: 0px;
+  padding-top: -10px;
+  
+}
+
+/* .text h1{
+ 
+    text-align: center; Center-align the heading 
+    margin-bottom: 20px;  Add some space below the heading 
+ 
+  
+} */
+
+.shop-nowtwo .shop-nowtwo-button {
+  background-color:#8b6e55; /* Button background color */
+  color: #fff; /* Button text color */
+  font-size: 14px;
+  padding: 10px 20px;
+  width: 132px;
+ border: none;
+  /* border-radius: 5px; */
+  transition: background-color 0.3s ease;
+  position: absolute;
+  margin-top: 1610px;
+  margin-left: -143%;
+  letter-spacing: 4px;
+  text-align: center;
+  top: -50%;
+  left: 160%;
+  white-space: nowrap; /* Prevent wrapping of the text */
+
+    cursor: pointer;
+
+}
+
+
+.shop-nowtwo .shop-nowtwo-button:hover {
+  background-color:#624327;
+}
+
+
+
+.shop-nowthree .shop-nowthree-button {
+  background-color:#8b6e55; /* Button background color */
+  color: #fff; /* Button text color */
+  font-size: 14px;
+  padding: 10px 20px;
+  width: 133px;
+
+  border: none;
+  /* border-radius: 5px; */
+  transition: background-color 0.3s ease;
+  position: absolute;
+  margin-top: 1610px;
+  margin-left: -114%;
+  letter-spacing: 4px;
+  text-align: center;
+  top: -50%;
+  left: 160%;
+  white-space: nowrap; /* Prevent wrapping of the text */
+
+    cursor: pointer;
+
+}
+
+
+.shop-nowthree .shop-nowthree-button:hover {
+  background-color:#624327;
+}
+
+
+.shop-nowfour .shop-nowfour-button {
+  background-color:#8b6e55; /* Button background color */
+  color: #fff; /* Button text color */
+  font-size: 14px;
+  padding: 10px 20px;
+letter-spacing: 4px;
+  border: none;
+  width: 137px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  margin-top: 1610px;
+  margin-left: -83%;
+  letter-spacing: 4px;
+  text-align: center;
+  top: -50%;
+  left: 160%;
+  white-space: nowrap; /* Prevent wrapping of the text */
+
+    cursor: pointer;
+
+}
+
+
+.shop-nowfour .shop-nowfour-button:hover {
+  background-color:#624327;
+ 
+}
+.bigsale-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  
+}
+
+.image-container {
+  flex: 0 0 40%;
+
+  /* Adjust width as needed */
+}
+
+.content-container {
+  flex: 0 0 50%; 
+  margin-bottom: -90px;
+
+  /* Adjust width as needed */
+}
+
+.sale-image {
+  width: 90%;
+padding-bottom: -90px;
+padding-top: 90px;
+}
+
+.big-h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 6px;
+}
+
+.b-paragraph {
+  font-size: 16px;
+  color: #555;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .bigsale-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container, .content-container {
+    flex: 0 0 100%; 
+  }
+}
+
+ .explore-link {
+  font-size: 17px;
+  color:#f2f1f1;
+  text-decoration: none;
+
+
+}
+
+ .explore-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+  text-decoration: none;
+  text-decoration: none;
+}
+
+/* .arrivalimage{
+  display: flex;
+  margin-bottom: 0;
+  justify-content: space-between;
+  
+  margin-top: -520px;
+     height: 50vh;
+     width:100%;
+     position: absolute;    
+}
+
+
+  .saleimage {
+    display: block;
+    margin: 20px auto; 
+    max-width: 100%; 
+ 
+
+.saleimage img {
+  margin-right: 30px; 
+}
+
+.saleimage img:last-child {
+  margin-right: 10%;
+}
+
+.saleimage img {
+  max-width: 100%;
+} */
+
+
+.firstpage{
+  display: flex;
+  margin: 0;
+  margin-bottom: 0;
+     height: 80vh;
+     width:90%;
+     position: absolute; 
+     margin-top: 80px;
+     margin-right: 50px; 
+     margin-left: 770px;
+     
+}
