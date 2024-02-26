@@ -1,90 +1,178 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
+/* .body{
+  background-color: #120b00;
 
-.header-Collection{
- box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1); 
- margin-top: 40.5px;
- width: 960%;
- height: 6vh;
- margin-left: -10px;
- }
- 
- .navlist {
-   padding: 10px 5px; 
-   display: flex;
-   color: #570303;
-   align-items:center;
-   margin-right: 100px; 
-   margin-left: 10px;
-   margin-top: 40px;
-   position: absolute; 
-   letter-spacing: 2.3px;
-   justify-content: space-around;
- }
-.Collectionimg{
-  width: 100%; /* Set the image width to fill the collection */
-  height: 90vh; /* Set the image height to fill the collection */
+} */
+
+.headerCollect{
+background-color: #ffffff; /* Background color */
+box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1); 
+margin-top: -8.5px;
+width: 960%;
+height: 7vh;
+margin-left: -10px;
+}
+.Collectheader{
+  background-color: #ffffff; /* Background color */
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1); 
+  margin-top: -8.5px;
+  width: 960%;
+  height: 7vh;
+  margin-left: -10px;
+  }
+
+/* .Collectionimg{
+  width: 100%;
+  height: 50vh; 
   object-fit: cover;
   position: absolute;
-  margin-top: 300px;
+  margin-top: 1.5px;
+  display: flex;
+
     
+  } */
+  .Collectionimg {
+    width: 11%;
+    height: 50vh;
+   
   }
+
   .collectionheading{
     font-size: 54px;
-    color:white;
+    font-weight: 400;
+    margin: -240px;
+    margin-left: 400px;
+    font-family: "Abril Fatface", serif;
+    color: #ffffff;
     letter-spacing: 6px;
-    margin-top: -220px;
-    margin-left: 350px;
 
   }
-  
   /* .collectionheading{
     font-size: 54px;
     color: #ffffff;
-    text-align: center; 
-    margin-top: 300px;
     letter-spacing: 6px;
     font-family: "Abril Fatface", serif;
     font-weight: 400;
     
   } */
-
-  .collectionsnav {
+  .listnavbar {
  
     padding: 10px 5px; 
     display: flex;
     align-items:center;
-    margin-right: 990px; 
-    margin-left: 450px;
-    margin-top: 200px;
-    text-decoration: underline;
+    /* margin-right: 990px;  */
+    margin-left: 10px;
+    margin-top: 5px;
     position: absolute; 
-    font-style: italic;
     letter-spacing: 2.3px;
     justify-content: space-around;
 
-   
-
-
   }
-   .collectionsnav li a{
+
+  
+  .listnavbar li a{
     text-decoration: none;
     color:#570303;
    }
   
-  .collectionsnav li {
+  .listnavbar li {
     display: inline-block; 
     margin-right: 20px; 
 
   } 
-  .collectionsnav :hover {
+  .listnavbar :hover {
 
     
     box-sizing: 2px 2px;
 
     
   } 
+  .listnavbar .icon {
+    width: 50px; 
+    height: 50px; 
+    position:absolute;
+    display: flex;
+    margin-left: 2100px;
+    justify-content: space-around;
+  
+  
+  }
+  .listnavbar .icon {
+  
+  
+    width: 30px; 
+    height: 30px; 
+    position:absolute;
+    color:#582304; 
+    tab-size: 200%;
+    display: flex;
+    margin-left: 1900px;
+    margin-top: 10px;
+   justify-content: space-around;
+    zoom: 1.3;
+  
+  
+  
+  }
+  
+ 
+  
+  .listnavbar.icon :hover{
+    background: none;
+    text-decoration: none;
+  
+  }
+  
+  .icon li {
+    display:none; 
+    margin-right: 20px; 
+  
+  }
+  
+
+
+
+
+
+
+
+
+  .navbarlist {
+ 
+    padding: 10px 5px; 
+    display: flex;
+    align-items:center;
+    /* margin-right: 390px;  */
+    margin-left: 400px;
+    margin-top: 5px;
+    position: absolute; 
+    letter-spacing: 2.3px;
+    justify-content: space-around;
+
+  }
+
+   .navbarlist li a{
+    text-decoration: underline;
+    color:#570303;
+   }
+  
+  .navbarlist li {
+    display: inline-block; 
+    margin-right: 20px; 
+
+  } 
+  .navbarlist :hover {
+
+    
+    box-sizing: 2px 2px;
+
+    
+  } 
+
+
+
 
 
  
