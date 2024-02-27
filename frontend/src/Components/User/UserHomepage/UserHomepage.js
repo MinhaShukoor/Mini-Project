@@ -54,7 +54,6 @@ const UserHomepage = ({ onShopNowClick }) => {
           </div>
         </div>
       </div>
-
       <UserFooter /> {/* Place UserFooter component here */}
     </div>
     
