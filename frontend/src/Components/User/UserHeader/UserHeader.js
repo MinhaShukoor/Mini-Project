@@ -14,7 +14,7 @@ function UserHeader() {
           <li><a href='/user/login'>LOGIN</a></li>
           <li><a href='/user/signup'>SIGNUP</a></li>
           <a href='/wishlist' className='icons'><VscHeart /></a>
-          <a href='/cart' className='icon'><HiOutlineShoppingBag /></a>
+          <a href='/user/cart' className='icon'><HiOutlineShoppingBag /></a>
         </ul>
       </nav>
     </div>

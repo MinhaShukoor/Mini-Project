@@ -34,6 +34,7 @@ import ProductItemPage from '../../src/Pages/User/ProductItemPage';
 import CartPage from '../../src/Pages/User/CartPage';
 import UserHome from '../../src/Pages/User/UserHome';
 import CollectionsPage from '../Pages/User/CollectionsPage';
+import NecklacePage from '../Pages/User/NecklacePage';
 
 const User = () => {
   return (
@@ -41,11 +42,12 @@ const User = () => {
       <Routes>
         <Route path="/" element={<UserHome />} />
         <Route path="/user/login" element={<UserLoginPage />} />
-        <Route path="/user/signup" element={<UserSignupPage />} />
+        <Route path="/user/signup"element={<UserSignupPage />} />
         <Route path="/user/collections" element={<CollectionsPage/>}/>
         <Route path="/user/products" element={<ProductListPage />} />
         <Route path="/user/products/:productId" element={<ProductItemPage />} />
         <Route path="/user/cart" element={<CartPage />} />
+        <Route path="/user/necklaces" element={<NecklacePage/>}/>
     
       </Routes>
     </div>

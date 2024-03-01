@@ -1,0 +1,96 @@
+/* Style for the container of necklace items */
+.body{
+    background-color: white;
+    margin-top: -70px;
+    position: relative;
+}
+
+.item-container {
+    background-color:white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    margin-top: 90px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .necklaces-heading{
+    font-size: 54px;
+    font-weight: 400;
+  align-items: center;
+    font-family: "Abril Fatface", serif;
+    color: #8b6e55;
+    margin-top:70px;
+    margin-left: 450px;
+    justify-self: center;
+    letter-spacing: 11px;
+  }
+  
+  /* Style for each necklace item */
+  /* .item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    height: 1000vh;
+    width: 2000px;
+    margin-top: -70px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  } */
+  
+  /* Style for the necklace image */
+  .item img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+
+  }
+  
+  /* Style for the necklace name */
+  .item h3 {
+    margin-top: 10px;
+    color: #8b6e55;
+    margin-bottom: 5px;
+    font-size: 15px;
+    margin-left: 23px;
+    
+  }
+  
+  /* Style for the necklace description */
+  .item p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #8b6e55;
+    margin-left: 50px;
+    margin-top: -2px;
+
+
+  }
+  
+  /* Style for the necklace price */
+  .item p.price {
+    font-weight: bold;
+    color: #8b6e55;
+    margin-left: 40px;
+
+  }
+  
+  /* Style for the "Add to Cart" button */
+  .item button {
+    display: block;
+    margin-top: 13px;
+    padding: 10px 10px;
+    margin-left: 40px;
+    background-color: #8b6e55;;
+    color: white;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+  
+  .item button:hover {
+    background-color: #68513e;;
+  }
+  

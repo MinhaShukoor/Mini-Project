@@ -147,6 +147,7 @@
   padding: 10px 20px;
   width: 132px;
  border: none;
+ text-decoration: none;
   /* border-radius: 5px; */
   transition: background-color 0.3s ease;
   position: absolute;
@@ -165,9 +166,14 @@
 
 .shop-nowtwo .shop-nowtwo-button:hover {
   background-color:#624327;
+  text-decoration: none;
+
 }
 
-
+.shoptwobutton{
+  text-decoration: none;
+  color: white;
+}
 
 .shop-nowthree .shop-nowthree-button {
   background-color:#8b6e55; /* Button background color */
@@ -191,6 +197,7 @@
     cursor: pointer;
 
 }
+
 
 
 .shop-nowthree .shop-nowthree-button:hover {

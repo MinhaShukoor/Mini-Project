@@ -17,7 +17,7 @@ const UserHomepage = ({ onShopNowClick }) => {
         <p className='headparagraph'>WE BELIEVE THAT EVERY PIECE OF JEWELRY HAS A UNIQUE TABLE TO TELL, AND WE'RE DEDICATED TO HELPING YOU DISCOVER THE PERFECT STORY FOR YOU. EXPLORE OUR CAPTIVATING RANGE TODAY AND LET YOUR STYLE SHINE WITH BRILLIANCE AND BEAUTY</p>
         <div className="shop-now">
           <button className="shop-now-button" onClick={onShopNowClick}>
-            <a className="explore-link" href="/user/products">EXPLORE MORE</a>
+            <a className="explore-link" href="/user/collections">EXPLORE MORE</a>
 
           </button>
         </div>
@@ -30,16 +30,19 @@ const UserHomepage = ({ onShopNowClick }) => {
           <img className="arrivalimage3" src="./Arrival3.PNG" alt="arrivalimage"/>
         </div>
         <div className="shop-nowtwo">
-          <button className="shop-nowtwo-button" onClick={onShopNowClick}>
-            SHOP NOW
+          <button className="shop-nowtwo-button" onClick={onShopNowClick}> 
+          <a className='shoptwobutton'  href="/user/collections">SHOP NOW</a>
+
           </button>
           <div className="shop-nowthree">
             <button className="shop-nowthree-button" onClick={onShopNowClick}>
-              SHOP NOW
+            <a className='shoptwobutton'  href="/user/collections">SHOP NOW</a>
+
             </button>
             <div className="shop-nowfour">
               <button className="shop-nowfour-button" onClick={onShopNowClick}>
-                SHOP NOW
+              <a className='shoptwobutton'  href="/user/collections">SHOP NOW</a>
+
               </button>
               <div className="bigsale-container">
                 <div className="image-container">

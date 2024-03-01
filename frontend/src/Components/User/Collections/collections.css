@@ -63,7 +63,7 @@ margin-left: -10px;
     display: flex;
     align-items:center;
     /* margin-right: 990px;  */
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 5px;
     position: absolute; 
     letter-spacing: 2.3px;
@@ -146,23 +146,36 @@ margin-left: -10px;
     align-items:center;
     /* margin-right: 390px;  */
     margin-left: 400px;
-    margin-top: 5px;
+    margin-top: 650px;
     position: absolute; 
     letter-spacing: 2.3px;
     justify-content: space-around;
-
+font-size: 36px;
+font-weight: bold;
+letter-spacing: 4px;
   }
 
    .navbarlist li a{
-    text-decoration: underline;
-    color:#570303;
+    text-decoration: none;
+    color:#ffffff;
    }
   
   .navbarlist li {
     display: inline-block; 
-    margin-right: 20px; 
+    margin-right: 130px; 
+    margin-left: -30px;
 
+  }
+  .navbarlist .earring{
+    margin-left: 10px;
   } 
+  .navbarlist .necklace{
+    margin-left: -160px;
+  } 
+  .navbarlist .ring{
+    margin-left: 60px;
+  } 
+ 
   .navbarlist :hover {
 
     
@@ -171,8 +184,46 @@ margin-left: -10px;
     
   } 
 
-
-
+  .jewelry-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 400px;
+    margin-left: 170px;
+  }
+  
+  .jewelry-item {
+    width: 300px;
+    margin: 20px;
+  }
+  
+  .jewelry-item-image {
+    width: 100%;
+    height: auto;
+  }
+  
+ 
+  
+  /* .jewelry-item-name {
+    margin-top: 10px;
+  }
+  
+  .jewelry-item-price {
+    font-weight: bold;
+  }
+  
+  .add-to-cart-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #0056b3;
+  } */
 
 
  
