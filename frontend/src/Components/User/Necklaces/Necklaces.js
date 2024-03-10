@@ -56,14 +56,13 @@ const necklacesData = [
         imageUrl: '/Necklace10.png',
         price: '$25.00 USD'
       },
-    // Add more items as needed
   ];
 
 function Necklaces() {
-    const addToCart = (productId) => {
-        // Here you can implement functionality to add the product to the cart
-        console.log(`Product ${productId} added to cart`);
-      };
+  const handleAddToCart = () => {
+    // Implement your add to cart logic here
+    console.log(`Added ${necklacesData} to cart`);
+  };
     
       return (
         <div className='body'>
@@ -76,8 +75,8 @@ function Necklaces() {
                 <h3>{necklace.name}</h3>
                 <p>{necklace.description}</p>
                 <p> {necklace.price}</p>
+                <button onClick={handleAddToCart}>Add to Cart</button>
 
-                < button onClick={() => addToCart(necklace.id)}>ADD TO CART</button>
               </div>
             ))}
           </div>
@@ -86,3 +85,7 @@ function Necklaces() {
     }
 
 export default Necklaces
+
+
+
+

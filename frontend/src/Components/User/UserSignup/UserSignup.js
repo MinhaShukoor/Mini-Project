@@ -230,11 +230,7 @@ const UserSignup = () => {
             <ErrorMessage name="email" component="div" className="error-message" />
           </div>
   
-          <div className="form-group">
-            <label htmlFor="phone">Phone Number:</label>
-            <Field type="tel" id="phone" name="phone" />
-            <ErrorMessage name="phone" component="div" className="error-message" />
-          </div>
+         
   
           <div className="form-group">
             <label htmlFor="password">Password:</label>

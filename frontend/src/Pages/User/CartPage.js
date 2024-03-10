@@ -1,12 +1,18 @@
-import React from 'react'
-import Cart from '../../Components/User/Cart/Cart'
+import React from 'react';
 
-function CartPage() {
-  return (
-    <div>
-      <Cart/>
-    </div>
-  )
-}
+ 
 
-export default CartPage
+ 
+  
+  function CartPage() {
+ 
+    return (
+      <div>
+    
+      </div>
+    );
+  }
+  
+  export default CartPage;
+  
+

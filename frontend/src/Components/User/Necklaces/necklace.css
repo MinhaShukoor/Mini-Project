@@ -1,4 +1,3 @@
-/* Style for the container of necklace items */
 .body{
     background-color: white;
     margin-top: -70px;
@@ -26,18 +25,7 @@
     letter-spacing: 11px;
   }
   
-  /* Style for each necklace item */
-  /* .item {
-    background-color: #f9f9f9;
-    padding: 20px;
-    height: 1000vh;
-    width: 2000px;
-    margin-top: -70px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
-  } */
   
-  /* Style for the necklace image */
   .item img {
     width: 100%;
     height: auto;
@@ -47,7 +35,6 @@
 
   }
   
-  /* Style for the necklace name */
   .item h3 {
     margin-top: 10px;
     color: #8b6e55;
@@ -57,7 +44,6 @@
     
   }
   
-  /* Style for the necklace description */
   .item p {
     margin-bottom: 8px;
     font-size: 14px;
@@ -68,7 +54,6 @@
 
   }
   
-  /* Style for the necklace price */
   .item p.price {
     font-weight: bold;
     color: #8b6e55;
@@ -76,7 +61,6 @@
 
   }
   
-  /* Style for the "Add to Cart" button */
   .item button {
     display: block;
     margin-top: 13px;
