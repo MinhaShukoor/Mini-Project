@@ -1,18 +1,21 @@
-import React, { useState } from 'react';
-import './adminuerlist.css'
+import  React,{ useState } from 'react';
+import './uerlist.css'
 
 const customersData = [
-  { id: 1, name: 'John Doe', email: 'john@example.com' },
-  { id: 2, name: 'Jane Smith', email: 'jane@example.com' },
-  { id: 3, name: 'Bob Johnson', email: 'bob@example.com' },
+  { id: 1, name: 'Mary Smith', email: 'mary@example.com' },
+  { id: 2, name: 'Emily Johnson', email: 'emily@example.com' },
+  { id: 3, name: 'Sarah Williams', email: 'sarah@example.com' },
+  { id: 4, name: 'Jessica Brown', email: 'jessica@example.com' },
+  { id: 5, name: 'Lauren Davis', email: 'lauren@example.com' }
 ];
 
-const AdminUserlist = () => {
+
+const Userlist = () => {
   return (
     <div className="admin-page"> 
-      <h2>Admin Customers Page</h2>
+      <h2 className='customers'> Customers</h2>
       <CustomersTable customers={customersData} />
-    </div>
+      </div>
   );
 };
 
@@ -24,6 +27,7 @@ const CustomersTable = ({ customers }) => {
   };
 
   return (
+    <div>
     <table className="customers-table"> 
       <thead>
         <tr>
@@ -50,10 +54,11 @@ const CustomersTable = ({ customers }) => {
         ))}
       </tbody>
     </table>
+    </div>
   );
 };
 
-export default AdminUserlist
 
+export default Userlist
 
 

@@ -1,0 +1,161 @@
+/* ProductListPage.css */
+
+/* .product-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .product-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .add-product-link {
+    display: block;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .product-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .product-list li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-actions {
+    margin-top: 5px;
+  }
+  
+  .edit-product-link {
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .delete-product-button {
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  } */
+  
+ .products-head{
+  margin-top: -50px;
+  color:#570303;
+  position: fixed;
+  font-size:26px;
+  text-decoration: underline;
+ }
+  
+ 
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .edit-button,
+  .delete-button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+  }
+
+  .body-PRODUCTS{
+    /* background-color: white; */
+    margin-top: 40px;
+    position: relative;
+}
+
+.item-container-PRODUCTS {
+    /* background-color:white; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    margin-top: 70px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+
+  }
+  
+  .product-item h3 {
+    margin-top: 10px;
+    color: #8b6e55;
+    margin-bottom: 5px;
+    font-size: 15px;
+    margin-left: 23px;
+    
+  }
+  
+  .product-item p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #8b6e55;
+    margin-left: 50px;
+    margin-top: -2px;
+
+
+  }
+  
+  .product-item p.price {
+    font-weight: bold;
+    color: #8b6e55;
+    margin-left: 40px;
+
+  }
+  
+
+  
+  .item button {
+    display: block;
+    margin-top: 13px;
+    padding: 10px 10px;
+    margin-left: 60px;
+    background-color: #6c1c04;;
+    color: white;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+  
+  .item button:hover {
+    background-color: #68513e;;
+  }
+  
+ 

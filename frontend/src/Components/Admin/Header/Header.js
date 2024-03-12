@@ -1,7 +1,7 @@
 import React from 'react'
-import './adminheader.css'
+import './header.css'
 
-function AdminHeader() {
+function Header() {
   return (
     <div className='adminheader'>
 
@@ -17,4 +17,4 @@ function AdminHeader() {
   )
 }
 
-export default AdminHeader
+export default Header

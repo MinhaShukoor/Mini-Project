@@ -1,10 +1,10 @@
 import React from 'react'
-import AdminUserlist from '../../Components/Admin/AdminUserlist/AdminUserlists'
+import Userlist from '../../Components/Admin/Userlist/Userlists'
 
 function AdminUserlistpage() {
   return (
     <div>
-      <AdminUserlist/>
+<Userlist/>
     </div>
   )
 }

@@ -3,7 +3,7 @@ body{
 
 }
 .header{
-  background-color: #edf3f1; /* Background color */
+  background-color: #edf3f1; 
  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1); 
  margin-top: -43.5px;
  width: 960%;
@@ -33,38 +33,59 @@ body{
 .signup-container{
     width: 300px;
    background-color:#D5D2CD;
-   box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.3); /* Adjust shadow as needed */
+   box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.3); 
     height: 450px;
     margin: auto;
     margin-left: 480px;
     padding: 30px 40px;
+    margin-top: 40px;
+
 }
 
-.signup-container h1{
-    margin: 20px 0px;
+.signupcontainer-h1 {
+  text-align: center;
+  position: fixed;
+  color: #570303;
+  margin-left: 617px;
+  margin-top: 75px;
 }
 
 .signup-fields {
     border: none;
     outline: none;
-  margin: 10px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
-    gap: 49px;
-    margin-top: 20px;
+    gap: 14px;
+    margin-top: 70px;
+    outline: none;
+    margin-bottom: 15px; 
+    padding: 8px ;
 }
 
 .signup-fields input{
     height: 32px;
     width:95%;
-    padding-left: 10px;
+    padding-left: 10px; 
     padding-right: 0px;
     border: none;
     outline: none;
-    border: 1px solid #4a929f;
+    border: 1px solid rgb(67, 66, 66);
     outline: none;
     color:#570303;
-
+    padding: 5px;
+}
+.user-name{
+    height: 32px;
+    width:95%;
+    padding-left: 10px; 
+    padding-right: 0px;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(67, 66, 66);
+    outline: none;
+    color:#570303;
+    padding: 5px;
 }
 
 .signup-fields ::placeholder{
@@ -72,13 +93,12 @@ body{
         display: inline;
         background: none;
         letter-spacing: 2px;
-      
+    
         font-family: 'Jura', sans-serif;
       }
       .signup input{
-         margin-bottom: 15px; /* Add space between inputs */
-   padding: 8px;
-
+         margin-bottom: 15px; 
+           padding: 8px;
         background: transparent;
         border-radius: 6px;
         border: 1px solid rgb(67, 66, 66);
@@ -99,13 +119,12 @@ body{
       .signup-container button {
          width: 100%;
          padding: 10px;
-         margin-top: 15px; /* Add space between button and inputs */
+         margin-top: 35px; 
          border: none;
-         /* border-radius: 5px; */
          background-color: #644326;
          color: #fff;
          cursor: pointer;
-         transition: background-color 0.3s ease; /* Add smooth transition effect */
+         transition: background-color 0.3s ease; 
        }
        
        .signup-container button:hover {
@@ -115,7 +134,7 @@ body{
        
        
        .signup-container .login-message {
-         margin-top: -65px; /* Add space between button and login message */
+         margin-top: 15px; 
          text-align: center;
          letter-spacing: 1px;
 
@@ -123,17 +142,143 @@ body{
                 }
        
        .signup-container .login-message .login-link {
-         color: #570303; /* Change link color */
+         color: #570303; 
          font-size: 17px;
          letter-spacing: 1px;
        }
        
        .signup-container .login-message .login-link:hover {
-         text-decoration: underline; /* Add underline on hover */
+         text-decoration: underline;
          text-decoration: none;
        }
 
-    
+       .login-link {
+        color: #570303;
+        text-decoration: none;
+      }
+      
+      .login-link:hover {
+        text-decoration: underline;
+      } 
        
        
        
+
+/* usersignup.css */
+
+/* .signup {
+  width: 100%;
+  height: 80vh;
+  padding-top: 100px;
+}
+
+.signup-container {
+  width: 300px;
+  background-color: #D5D2CD;
+  box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.3);
+  height: 450px;
+  margin: auto;
+  margin-left: 480px;
+  padding: 30px 40px;
+  margin-top: -40px;
+
+
+}
+
+.signupcontainer-h1 {
+  text-align: center;
+  position: fixed;
+  color: #570303;
+  margin-left: 620px;
+  margin-top: -30px;
+
+}
+
+.signup-fields {
+  border: none;
+  outline: none;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+  margin-top: 20px;
+}
+
+.signup-fields ::placeholder{
+  color:#570303;
+  display: inline;
+  background: none;
+  letter-spacing: 2px;
+
+  font-family: 'Jura', sans-serif;
+}
+.signup input{
+   margin-bottom: 15px; 
+padding: 8px;
+
+  background: transparent;
+  border-radius: 6px;
+  border: 1px solid rgb(67, 66, 66);
+}
+
+.signup-fields input::placeholder {
+  color: #570303;
+  display: inline;
+  border: none;
+  letter-spacing: 2px;
+  font-family: 'Jura', sans-serif;
+}
+
+.signup-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 70px;
+  border: none;
+  background-color: #644326;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-container button:hover {
+  background-color: #624327;
+}
+
+.login-message {
+  margin-top: 20px;
+  text-align: center;
+  color: #570303;
+  margin-top: 16px;
+  position: fixed;
+  margin-left: 30px;
+}
+
+.login-link {
+  color: #570303;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+} */
+
+.error-message {
+  color: red; /* Set the color of the error message to red */
+  font-size: 14px; /* Optional: Adjust font size of error message */
+}
+
+.createaccount-link {
+  font-size: 17px;
+  margin-top: 100px;
+  color:#f2f1f1;
+  text-decoration: none;
+
+
+}
+
+ .createaccount-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+  text-decoration: none;
+  margin-top: 40px;
+  text-decoration: none;
+}

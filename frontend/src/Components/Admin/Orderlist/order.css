@@ -1,0 +1,65 @@
+.orders-head{
+  /* margin-left: -250px; */
+  margin-top: -100px;
+  color:#570303;
+  position: fixed;
+  font-size:26px;
+  text-decoration: underline;
+}
+
+.admin-order-page {
+    margin: 20px;
+    margin-top: 120px;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .order-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .order-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .order-details {
+    margin-bottom: 10px;
+  }
+  
+  .order-details p {
+    margin: 5px 0;
+  }
+  
+  .order-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .view-details-button,
+  .mark-as-shipped-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .view-details-button {
+    background-color: #8b6e55;
+    color: #fff;
+  }
+  
+  .mark-as-shipped-button {
+    background-color:  #8b6e55;
+    color: #fff;
+    margin-left: 10px;
+    position: fixed;
+  }
+  

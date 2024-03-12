@@ -1,9 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
+// import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -14,9 +14,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
-import './adminsidebar.css'
+import './sidebar.css'
 
-const AdminSidebar = () => {
+const Sidebar = () => {
 
 
     const [state, setState] = React.useState({
@@ -33,6 +33,8 @@ const AdminSidebar = () => {
   
       setState({ ...state, [anchor]: open });
     };
+
+   
     const list = (anchor) => (
         <Box 
           className="container"
@@ -43,47 +45,54 @@ const AdminSidebar = () => {
         >
           <List>
             
-            <ListItem disablePadding>
-            <ListItemButton >
+                <ListItem disablePadding>
+                <a href="/admin" className='home'>
 
-                    <ListItemIcon>
+                  <ListItemButton >
+                   <ListItemIcon>
                     <HomeIcon />
                     </ListItemIcon>
-                    <ListItemText primary={"Home"}/>
+                    <ListItemText  primary={"Home"}/>
                     </ListItemButton>
-                   </ListItem>
+                    </a>
+                    </ListItem>
 
                    <ListItem disablePadding>
-                   <ListItemButton>
-
+                   <a href='/admin/products' className='products'>
+                    <ListItemButton>
                     <ListItemIcon>
                     <LocalMallOutlinedIcon />
                     </ListItemIcon>
                     <ListItemText primary={"Products"}/>
-
                     </ListItemButton>
-                   </ListItem>
+                    </a>
+                    </ListItem>
 
-                   <ListItem disablePadding>
-                   <ListItemButton >
+                    <ListItem disablePadding>
+                    <a href='/admin/cutomers' className='customer'>
 
+                    <ListItemButton>
                     <ListItemIcon>
-                   <PeopleAltOutlinedIcon/>
+                    <PeopleAltOutlinedIcon/>
+
                     </ListItemIcon>
                     <ListItemText primary={"Customers"}/>
-
                     </ListItemButton>
-                   </ListItem>
+                    </a>
+                    </ListItem>   
+
+                   
 
                    <ListItem disablePadding>
-                   <ListItemButton >
+                   <a href="/admin/orders" className='orders'>
 
-                    <ListItemIcon>
-                   <ShoppingCartOutlinedIcon/>
-                    </ListItemIcon>
-                    <ListItemText primary={"orders"}/>
-
-                    </ListItemButton>
+                    <ListItemButton >
+                     <ListItemIcon>
+                     <ShoppingCartOutlinedIcon/>
+                     </ListItemIcon>
+                     <ListItemText primary={"orders"}/>
+                     </ListItemButton>
+                    </a>
                    </ListItem>
           </List>
          
@@ -113,5 +122,5 @@ const AdminSidebar = () => {
   );
 }
 
-export default AdminSidebar;
+export default Sidebar;
 

@@ -1,10 +1,20 @@
-/* styles.css */
 
-/* AdminCustomersPage styles */
+.customers{
+  margin-left: -250px;
+  margin-top: -80px;
+  color:#570303;
+  position: fixed;
+  font-size:26px;
+  text-decoration: underline;
+}
 .admin-page {
     max-width: 800px;
-    margin: 0 auto;
+   margin-top: 100px;
+   margin-left: 250px;
+    margin-bottom: 100px;
     padding: 20px;
+    color:#570303;
+
   }
   
   /* CustomersTable styles */
@@ -16,16 +26,18 @@
   th, td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #552020;
   }
   
   th {
-    background-color: #f2f2f2;
+    background-color: #6d4d29;
+    color: white;
   }
   
-  button {
+  .block-button {
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #956f43;
+
     color: #fff;
     border: none;
     cursor: pointer;

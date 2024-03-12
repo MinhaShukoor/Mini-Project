@@ -92,167 +92,91 @@
 //   );
 // };
 
- 
-
-// import { Formik, Field, Form, ErrorMessage } from 'formik';
-// import * as Yup from 'yup';
-// import React, { useState } from 'react';
-
-
-// const UserSignup = () => {
-//     const validationSchema = Yup.object().shape({
-//         firstName: Yup.string().required('First Name is required'),
-//         lastName: Yup.string().required('Last Name is required'),
-//         email: Yup.string().email('Invalid email').required('Email is required'),
-//         password: Yup.string()
-//             .required('Password is required')
-//             .min(8, 'Password must be at least 8 characters'),
-//         confirmPassword: Yup.string()
-//             .oneOf([Yup.ref('password'), null], 'Passwords must match')
-//             .required('Confirm Password is required'),
-//     });
-
-//     const initialValues = {
-//         firstName: '',
-//         lastName: '',
-//         email: '',
-//         password: '',
-//         confirmPassword: ''
-//     };
-
-//     const [isSubmitted, setIsSubmitted] = useState(false);
-
-//     const handleSubmit = (values, { setSubmitting }) => {
-//         // Your form submission logic goes here
-//         console.log(values);
-//         setIsSubmitted(true);
-//         setSubmitting(false);
-//     };
-//     return (
-//         <Formik
-//             initialValues={initialValues}
-//             validationSchema={validationSchema}
-//             onSubmit={handleSubmit}
-//         >
-//             {({ isSubmitting }) => (
-//                 <Form className="signup-container">
-//                     <h1>SIGNUP</h1>
-//                     <div className="signup-fields">
-//                         <Field type="text" name="firstName" placeholder="First Name" />
-//                         <ErrorMessage name="firstName" component="div" className="error-message" />
-//                         <Field type="text" name="lastName" placeholder="Last Name" />
-//                         <ErrorMessage name="lastName" component="div" className="error-message" />
-//                         <Field type="email" name="email" placeholder="Email" />
-//                         <ErrorMessage name="email" component="div" className="error-message" />
-//                         <Field type="password" name="password" placeholder="Password" />
-//                         <ErrorMessage name="password" component="div" className="error-message" />
-//                         <Field type="password" name="confirmPassword" placeholder="Confirm Password" />
-//                         <ErrorMessage name="confirmPassword" component="div" className="error-message" />
-//                     </div>
-//                     <button type="submit" disabled={isSubmitting}>
-//                         {isSubmitting ? 'Creating Account...' : 'Create Account'}
-//                     </button>
-//                     {isSubmitted && (
-//                         <div className="success-message">Account created successfully!</div>
-//                     )}
-//                 </Form>
-//             )}
-//         </Formik>
-//     );
-// };
-
-// export default UserSignup
-
-
-
-
 import React from 'react';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
-const validationSchema = Yup.object().shape({
-  username: Yup.string()
-    .required('Username is required')
-    .matches(/^[a-zA-Z0-9_]{3,20}$/, 'Invalid username. Must be 3-20 characters and alphanumeric'),
-  email: Yup.string()
-    .email('Invalid email')
-    .required('Email is required')
-    .matches(/\.com$/, 'invalid email'),
-  phone: Yup.string()
-    .matches(
-      /^\+(?:[0-9] ?){6,14}[0-9]$/,
-      'Invalid phone number. Must be a valid international phone number'
-    )
-    .required('Phone number is required'),
-  password: Yup.string()
-    .required('Password is required')
-    .matches(
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
-      'Password must contain at least 8 characters, including one uppercase, one lowercase, one number, and one special character.'
-    ),
-  confirmPassword: Yup.string()
-    .oneOf([Yup.ref('password'), null], 'Passwords must match')
-    .required('Confirm Password is required'),
-});
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import './usersignup.css'; 
 
+const UserSignup = ({ onShopNowClick }) => {
 
-
-const UserSignup = () => {
-    const initialValues = {
-      username: '',
-      email: '',
-      phone: '',
-      password: '',
-      confirmPassword: '',
+    const validateUsername = (value) => {
+      let error;
+      if (!value) {
+        error = 'Username is required';
+      } else if (!/^[a-zA-Z0-9]{3,}$/.test(value)) {
+        error = 'Username must contain at least 3 characters and only contain alphanumeric characters';
+      }
+      return error;
     };
-  
-    const handleSubmit = (values, { setSubmitting }) => {
-      // Handle form submission logic here
-      console.log(values);
-      setSubmitting(false);
-    };
-  
-    return (
-      <Formik
-        initialValues={initialValues}
-        validationSchema={validationSchema}
-        onSubmit={handleSubmit}
-      >
-        <Form>
-          <div className="form-group">
-            <label htmlFor="username">Username:</label>
-            <Field type="text" id="username" name="username" />
-            <ErrorMessage name="username" component="div" className="error-message" />
-          </div>
-  
-          <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <Field type="email" id="email" name="email" />
-            <ErrorMessage name="email" component="div" className="error-message" />
-          </div>
-  
-         
-  
-          <div className="form-group">
-            <label htmlFor="password">Password:</label>
-            <Field type="password" id="password" name="password" />
-            <ErrorMessage name="password" component="div" className="error-message" />
-          </div>
-  
-          <div className="form-group">
-            <label htmlFor="confirmPassword">Confirm Password:</label>
-            <Field type="password" id="confirmPassword" name="confirmPassword" />
-            <ErrorMessage name="confirmPassword" component="div" className="error-message" />
-          </div>
-  
-          <div className="form-group">
-            <button type="submit">Submit</button>
-          </div>
-        </Form>
-      </Formik>
-    );
+
+
+  const validateEmail = (value) => {
+    let error;
+    if (!value) {
+      error = 'Email is required';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+      error = 'Invalid email address';
+    }
+    return error;
   };
 
-  
-  
-  export default UserSignup
-  
+  const validatePassword = (value) => {
+    let error;
+    if (!value) {
+      error = 'Password is required';
+    } else if (!/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/.test(value)) {
+      error = 'Password must contain at least 8 characters, including uppercase, lowercase, and numbers';
+    }
+    return error;
+  };
+
+  return (
+    <div>
+     <nav>
+         <ul className='nav-list'>
+         <li><a href="/" >HOME</a></li>
+
+        </ul>
+         </nav>
+         <div className='header'>
+    <div className="signup">
+      <h1 className='signupcontainer-h1'>Signup</h1>
+      <div className="signup-container">
+        <Formik
+          initialValues={{ username: '', email: '', password: '' }}
+          onSubmit={(values, { setSubmitting }) => {
+            setTimeout(() => {
+              alert(JSON.stringify(values, null, 2));
+              setSubmitting(false);
+            }, 400);
+          }}
+        >
+          <Form className="signup-fields">
+          <div>
+              <Field type="text" name="username" placeholder="Username"  className="user-name" validate={validateUsername} />
+              <ErrorMessage name="username" component="div" className="error-message" />
+            </div>
+            <div>
+              <Field type="email" name="email" placeholder="Email" validate={validateEmail} />
+              <ErrorMessage name="email" component="div" className="error-message" />
+            </div>
+            <div>
+              <Field type="password" name="password" placeholder="Password" validate={validatePassword} />
+              <ErrorMessage name="password" component="div" className="error-message" />
+            </div>
+            <button className="CreateAcoount" onClick={onShopNowClick}>
+            <a className="createaccount-link" href="/user/collections">Create Account</a>
+
+          </button>
+          </Form>
+        </Formik>
+        <div className="login-message">
+          Already have an account? <a className="login-link" href="/user/login">Login here</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  );
+};
+
+export default UserSignup;
