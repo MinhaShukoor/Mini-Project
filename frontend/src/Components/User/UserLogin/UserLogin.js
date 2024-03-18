@@ -77,82 +77,92 @@
 
 // export default UserLogin
 
-import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import './userlogin.css'
-
-const UserLogin = ({ onShopNowClick }) => {
-
-    const validateUsername = (value) => {
-      let error;
-      if (!value) {
-        error = 'Username is required';
-      } else if (!/^[a-zA-Z0-9]{3,}$/.test(value)) {
-        error = 'Username must contain at least 3 characters and only contain alphanumeric characters';
-      }
-      return error;
-    };
 
 
-  const validateEmail = (value) => {
-    let error;
-    if (!value) {
-      error = 'Email is required';
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-      error = 'Invalid email address';
-    }
-    return error;
+  import React from 'react';
+  import './userlogin.css'
+
+  import { Formik, Form, Field, ErrorMessage } from 'formik';
+  
+  const UserLogin = () => {
+    const handleLoginClick = () => {
+      // Navigate to the /admindashboard route
+      window.location.href = '/user/collections';
   };
+    
+      const validateUsername = (value) => {
+          if (!value) {
+              return 'Username is required';
+          } else if (!/^[a-zA-Z0-9]{3,}$/.test(value)) {
+              return 'Username must contain at least 3 characters and only contain alphanumeric characters';
+          }
+          return null;
+      };
+  
+    
+    
+  
+      const validatePassword = (value) => {
+          if (!value) {
+              return 'Password is required';
+          } else if (!/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/.test(value)) {
+              return 'Password must contain at least 8 characters, including uppercase, lowercase, and numbers';
+          }
+          return null;
+      };
+  
+      return (
+        <div>
+            <nav>
+                <ul className='nav-list'>
+                    <li><a href="/">HOME</a></li>
+                </ul>
+            </nav>
+            <div className='header'>
+                <div className="signup">
+                    <h1 className='logincontainer-h1'>LOGIN</h1>
+                    <div className="login-container">
+                        <Formik
+                            initialValues={{ username: '', password: '' }}
+                            onSubmit={(values, { setSubmitting }) => {
+                                // const usernameError = validateUsername(values.username);
+                                // const emailError = validateEmail(values.email);
+                                // const passwordError = validatePassword(values.password);
 
-  const validatePassword = (value) => {
-    let error;
-    if (!value) {
-      error = 'Password is required';
-    } else if (!/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/.test(value)) {
-      error = 'Password must contain at least 8 characters, including uppercase, lowercase, and numbers';
-    }
-    return error;
-  };
+                                // if (usernameError || emailError || passwordError) {
+                                //     // If any validation fails, set the error state
+                                //     setError('Please fix the errors in the form.');
+                                // } else {
+                                //     // If no validation errors, navigate to the next page
+                                //     setSubmitting(true);
+                                //     // Navigate to the next page after successful account creation
+                                //     window.location.href = "/user/collections";
+                                // }
+                            }}
+                        >
+                        
+                            <Form className="signup-fields">
+                                <div>
+                                    <Field type="text" name="username" placeholder="Username" className="user-name" validate={validateUsername} />
+                                    <ErrorMessage name="username" component="div" className="error-message" />
+                                </div>
+                               
+                                <div>
+                                    <Field type="password" name="password" placeholder="Password" validate={validatePassword} />
+                                    <ErrorMessage name="password" component="div" className="error-message" />
+                                </div>
+                                <button onClick={handleLoginClick} className="CreateAcoount">Login</button>
 
-  return (
-    <div>
-     <nav>
-         <ul className='nav-home'>
-         <li><a href="/" >HOME</a></li>
-
-        </ul>
-         </nav>
-         <div className='header-login'>
-    <div className="login">
-      <h1 className='login-head'>Login</h1>
-      <div className="login-container">
-        <Formik
-          initialValues={{ username: '',  password: '' }}
-          onSubmit={(values, { setSubmitting }) => {
-            setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
-              setSubmitting(false);
-            }, 400);
-          }}
-        >
-          <Form className="login-fields">
-          <div>
-              <Field type="text" name="username" placeholder="Username"  className="user-name" validate={validateUsername} />
-              <ErrorMessage name="username" component="div" className="error-message" />
+                            </Form>
+                        </Formik>
+                        <div className="login-message">
+                      <div className="login-message"><a className="login-link" href="/user/signup">Create a new account</a>
+</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          
-            <div>
-              <Field type="password" name="password" placeholder="Password" validate={validatePassword} />
-              <ErrorMessage name="password" component="div" className="error-message" />
-            </div>
-            <div className="login-message" onClick={onShopNowClick}><a className="login-link" href="/user/signup">Create a new account</a>
-            </div>
-          </Form>
-        </Formik>
         </div>
-      </div>
-    </div>
-    </div>
-  );
-};
+      );
+  };
 export default UserLogin

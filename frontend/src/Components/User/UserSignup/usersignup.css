@@ -34,11 +34,11 @@ body{
     width: 300px;
    background-color:#D5D2CD;
    box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.3); 
-    height: 450px;
+    height: 490px;
     margin: auto;
     margin-left: 480px;
     padding: 30px 40px;
-    margin-top: 40px;
+    margin-top: -20px;
 
 }
 
@@ -46,8 +46,8 @@ body{
   text-align: center;
   position: fixed;
   color: #570303;
-  margin-left: 617px;
-  margin-top: 75px;
+  margin-left: 600px;
+  margin-top: 25px;
 }
 
 .signup-fields {
@@ -137,13 +137,14 @@ body{
          margin-top: 15px; 
          text-align: center;
          letter-spacing: 1px;
-
+margin-left: 40px;
            color: #570303;
                 }
        
        .signup-container .login-message .login-link {
          color: #570303; 
          font-size: 17px;
+         margin-left: 60px;
          letter-spacing: 1px;
        }
        
@@ -154,7 +155,11 @@ body{
 
        .login-link {
         color: #570303;
-        text-decoration: none;
+        text-decoration:underline;
+      }
+      .loginhere-link{
+        color: #570303;
+        text-decoration:underline; 
       }
       
       .login-link:hover {
@@ -262,9 +267,9 @@ padding: 8px;
   text-decoration: underline;
 } */
 
-.error-message {
-  color: red; /* Set the color of the error message to red */
-  font-size: 14px; /* Optional: Adjust font size of error message */
+/* .error-message {
+  color: rgb(231, 10, 10); 
+  font-size: 14px;
 }
 
 .createaccount-link {
@@ -277,8 +282,60 @@ padding: 8px;
 }
 
  .createaccount-link:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline; 
   text-decoration: none;
   margin-top: 40px;
   text-decoration: none;
+} */
+.signup-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-container {
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }

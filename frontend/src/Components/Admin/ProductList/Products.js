@@ -112,8 +112,6 @@ const Products = ({ onDelete }) => {
     setProducts(products.filter(product => product.id !== productId));
   };
 
-
-
  
   return (
     <div className='body-PRODUCTS'>
@@ -128,8 +126,7 @@ const Products = ({ onDelete }) => {
             <button onClick={() => handleDelete(product.id)} className="delete-button">Disable</button>
           </div>
       ))}
-    </div>
-    
+    </div>   
     </div>
   );
 };

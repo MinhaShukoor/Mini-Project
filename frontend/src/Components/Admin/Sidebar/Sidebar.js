@@ -8,7 +8,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import HomeIcon from '@mui/icons-material/Home';
+import GridViewIcon from '@mui/icons-material/GridView';
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 import MenuIcon from '@mui/icons-material/Menu';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
@@ -46,13 +46,13 @@ const Sidebar = () => {
           <List>
             
                 <ListItem disablePadding>
-                <a href="/admin" className='home'>
+                <a href='/admin/dashboard' className='home'>
 
                   <ListItemButton >
                    <ListItemIcon>
-                    <HomeIcon />
+                   <GridViewIcon/>
                     </ListItemIcon>
-                    <ListItemText  primary={"Home"}/>
+                    <ListItemText  primary={"Dashboard"}/>
                     </ListItemButton>
                     </a>
                     </ListItem>
