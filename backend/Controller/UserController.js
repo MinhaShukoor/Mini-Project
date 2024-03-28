@@ -11,7 +11,7 @@ module.exports.signup=async(req,res,next) =>{
     console.log(req.body,"%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
 const{email,password,userName}=req.body;
     try{
-        const emailExist=await UserModel.findOne({email:email});
+    const emailExist=await UserModel.findOne({email:email});
         if (emailExist) {
             return res.json({message:"Email already exists",status:false});
         }
@@ -28,10 +28,35 @@ const{email,password,userName}=req.body;
             token,
         });
 
-    } catch(error){
+    } catch(error) {
         console.log(error);
         return res.json({message:"Internal server in sign up",status:false})
         
     }
 };
+
+module.exports.login = async (req, res, next) => {
+    console.log(req.body, "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+    const { userName, password } = req.body;
+    try {
+        const user = await UserModel.findOne({ userName: userName });
+        if (!user) {
+            return res.json({ message: "User not found", status: false });
+        }
+       
+        const token = createToken(user._id);
+        return res.json({
+            message: "Login successful",
+            status: true,
+            token,
+          
+        });
+    } catch (error) {
+        console.log(error);
+        return res.json({ message: "Internal server error in login", status: false });
+    }
+};
+
+
+
 
